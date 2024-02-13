@@ -1,0 +1,276 @@
+1)Hello World
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World...!";
+    return 0;
+}
+
+2)Hello World with New Line
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World...!\nHello World...!";
+    return 0;
+}
+
+3)Hello World with Tab
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello\tWorld...!";
+    return 0;
+}
+
+4)Character Input
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cin>>a;
+    cout<<a;
+    return 0;
+}
+
+5)ASCII Value
+#include<iostream>
+using namespace std;
+int main()
+{
+    char b;
+    cin>>b;
+    int a=b;
+    cout<<a;
+    return 0;
+}
+
+6)ASCII Value-II
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    char b=a;
+    cout<<b;
+    return 0;
+}
+
+7)Float Input
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    cout<<fixed<<setprecision(6)<<a;
+    return 0;
+}
+
+8)Float Formatting
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    cout<<fixed<<setprecision(6)<<"\n"<<a;
+    cout<<fixed<<setprecision(3)<<"\n"<<a;
+    cout<<fixed<<setprecision(2)<<"\n"<<a;
+    cout<<fixed<<setprecision(1)<<"\n"<<a;
+    return 0;
+}
+
+9)Integer Input
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout<<a;
+    return 0;
+}
+
+10)Round off
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float a,c,d;
+    cin>>a;
+    int b=a;
+    cout<<b;
+    c=ceil(a);
+    d=floor(a);
+    cout<<fixed<<setprecision(1)<<"\n"<<c<<fixed<<setprecision(1)<<"\n"<<d;
+    return 0;
+}
+
+11)Statistics
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<"1)Dead:"<<a<<"\n2)Injured:"<<b<<"\n3)Safe:"<<c<<"\nPlease help the people who are suffering!!!";
+    return 0;
+}
+
+12)Welcome to Programming
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello People! Welcome to our desert.";
+    return 0;
+}
+
+13)Stadium Name
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"MECON\nStadium";   
+    return 0;
+}
+
+14)Cricketer's Age
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout<<"The cricketer age is "<<a;
+    return 0;
+}
+
+15)Bowling Speed
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    double a;
+    cin>>a;
+    cout<<fixed<<setprecision(2)<<a;
+    return 0;
+}
+
+16)Welcome Aliens
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello Aliens ! Welcome to our planet Earth.";
+    return 0;
+}
+
+17)Dhoni's nick name!!!
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"M.S, MSD, Mahi, Thala, Ranchi Rocker, Captain Cool";
+    return 0;
+}
+
+18)Dhoni's Family!!!
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"M. S. Dhoni\nFather: Mr. Pan Singh\nMother: Mrs. Devki Devi\nSibings: Narendra Singh and Jayanti Gupta";
+    return 0;
+}
+
+19)Dhoni's Endorsements!!!
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Pepsico\nAIRCEL\nCommunications\nTitan\nTVS\nMotors\nBoost\nReebok\nVideocon\nGE Money";
+    return 0;
+}
+20)Interschool Trophy
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,c;
+    int b,o,s,ov;
+    cout<<"Team 1:\nTeam Name:\n";
+    getline(cin,a);
+    cout<<"Score:\n";
+    cin>>b;
+    cout<<"Overs played:\n";
+    cin>>o;
+    cin.ignore();
+    cout<<"Team 2:\n";
+    cout<<"Team Name:\n";
+    getline(cin,c);
+    cout<<"Score:\n";
+    cin>>s;
+    cout<<"Overs played:\n";
+    cin>>ov;
+  
+    cout<<"Match Details:\nTeam 1:\nName: "<<a;
+    cout<<"\nScore: "<<b;
+    cout<<"\nOvers played: "<<o;
+    cout<<"\nTeam 2:\nName: "<<c;
+    cout<<"\nScore: "<<s;
+    cout<<"\nOvers played: "<<ov;
+    return 0;
+}
+
+21)Favorite Game!!!
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a,g;
+    cout<<"Name:\n";
+    getline(cin,a);
+    cout<<"Game:\n";
+    cin>>g;
+    cout<<"My name is "<<a<<" and I love to play "<<g<<"\n";
+    
+    return 0;
+}
+
+22)Select the Stadium
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    getline(cin,a);
+    cout<<"Today's match will be held at "<<a;
+    return 0;
+}
+
+23)Dhoni's Confident Reply!!!
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a,b;
+    cout<<"Banerjee's Question:\n";
+    getline(cin,a);
+    cout<<"Dhoni's Reply:\n";
+    getline(cin,b);
+    cout<<"For Banerjee's question \""<<a<<"\" Dhoni's confident reply was \""<<b<<"\n";
+    
+    return 0;
+}
