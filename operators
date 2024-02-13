@@ -1,0 +1,451 @@
+1)Sum and Difference
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    cin>>b;
+    cout<<a+b<<"\n";
+    cout<<a-b;
+    return 0;
+}
+
+2)Product and Division
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    cin>>b;
+    cout<<a*b<<"\n";
+    cout<<a/b<<"\n";
+    cout<<a%b;
+    return 0;
+}
+
+3)Swapping two numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c=0;
+    cin>>a;
+    cin>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<a<<"\n";
+    cout<<b;
+    return 0;
+}
+
+4)Swapping two numbers without third variable
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    cin>>b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<a<<"\n";
+    cout<<b;
+    return 0;
+}
+
+5)Average Calculation
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d,e,s;
+    cin>>a>>b>>c>>d>>e;
+    s=(a+b+c+d+e)/5;
+    cout<<fixed<<setprecision(2)<<s;
+    return 0;
+}
+6)Area Calculation
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int sq,lr,br;
+    float rc;
+    cin>>sq>>lr>>br>>rc;
+    int as=sq*sq;
+    int ar=lr*br;
+    float ac=3.14*rc*rc;
+    cout<<as<<"\n";
+    cout<<ar<<"\n";
+    cout<<fixed<<setprecision(2)<<ac;
+    return 0;
+}
+
+7)Power of a number
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int x,n,z;
+    cin>>x>>n;
+    z=pow(x,n);
+    cout<<z;
+    return 0;
+}
+
+8)Alice in Wonderland
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a,b,c;
+    cin>>n;
+    a=n/10;
+    b=n%10;
+    c=a+b;
+    cout<<"Alice must go in path-"<<c;
+    return 0;
+}
+
+9)Simple Interest
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int p,n;
+    float r,i;
+    cin>>p>>n>>r;
+    i=(p*n*r)/100;
+    cout<<fixed<<setprecision(2)<<i;
+    return 0;
+}
+
+10)3 idiots
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,y1,x2,y2;
+    float x,y;
+    cin>>x1>>y1>>x2>>y2;
+    x=(x1+x2)/2;
+    y=(y1+y2)/2;
+    cout<<"Binoy's house is located at ("<<fixed<<setprecision(1)<<x<<","<<fixed<<setprecision(1)<<y<<")";
+    
+    return 0;
+}
+
+11)spliting into teams
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,t,tm,l;
+    cin>>n>>t;
+    tm=n/t;
+    l=n%t;
+    cout<<"The number of students in each team is "<<tm<<" and left out is "<<l;
+    
+    return 0;
+}
+
+12)Ternary Operator
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<(n%2==0?"Even":"Odd");
+    return 0;
+}
+
+13)Fencing The Ground
+#include<iostream>
+using namespace std;
+int main()
+{
+    int l,b,rl;
+    cin>>l>>b;
+    rl=2*l+2*b;
+    cout<<"Required length is "<<rl<<"m\n";
+    cout<<"Required quantity of carpet is "<<l*b<<"sqm";
+    
+    return 0;
+}
+
+14)Jack Sparrow’s Treasure Hunt
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a,b;
+    cin>>n;
+    a=n/1000;
+    b=n%10;
+    cout<<a+b;
+    
+    return 0;
+}
+
+15)Profit Calculation
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,a,b,c,s,w,p;
+    cin>>x>>a>>b;
+    s=x*a;
+    c=x*b;
+    p=s-(c+100);
+    cout<<"The profit obtained is Rs."<<p;
+    
+    return 0;
+}
+
+16)Arithmetic Operator
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    cin>>b;
+    cout<<a <<" + "<< b <<" = " <<a+b<<"\n";
+    cout<<a <<" - "<< b << " = " <<a-b<<"\n";
+    cout<<a <<" * "<< b <<" = " <<a*b<<"\n";
+    cout<<a <<" / "<< b <<" = " <<a/b<<"\n";
+    cout<<a <<" % "<< b <<" = " <<a%b;
+    
+    return 0;
+}
+
+17)Business Proposal
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float p,r,y;
+    cin>>p;
+    cin>>r;
+    cin>>y;
+    float a=(p*r*y)/100;
+    float m=a+p;
+    float d=(0.02*a);
+    float s=m-d;
+    cout<<fixed<<setprecision(2)<<a<<"\n";
+    cout<<fixed<<setprecision(2)<<m<<"\n";
+    cout<<fixed<<setprecision(2)<<d<<"\n";
+    cout<<fixed<<setprecision(2)<<s;
+    return 0;
+}
+
+18)Football Stadium
+#include<iostream>
+using namespace std;
+int main()
+{
+    int l,b;
+    cin>>l;
+    cin>>b;
+    int c=2*l+2*b;
+    cout<<c<<"\n";
+    cout<<l*b;
+    return 0;
+}
+
+19)Culturals Training
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,t;
+    cin>>n;
+    cin>>t;
+    cout<<n/t<<"\n";
+    cout<<n%t;
+    return 0;
+}
+
+20)Paper Bags Agency
+#include<iostream>
+using namespace std;
+int main()
+{
+    int w,x,y,s,c;
+    cin>>w;
+    cin>>x;
+    cin>>y;
+    c=w*y;
+    s=w*x;
+    cout<<s-(c+100);
+    return 0;
+}
+
+21)Team Flash
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,x2,y1,y2;
+    cin>>x1;
+    cin>>y1;
+    cin>>x2;
+    cin>>y2;
+    float c=(x1+x2)/2;
+    float d=(y1+y2)/2;
+    cout<<fixed<<setprecision(1)<<c<<"\n";
+    cout<<fixed<<setprecision(1)<<d;
+    return 0;
+}
+
+22)The Chronicles of Narnia
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a;
+    b=a/10;
+    c=a%10;
+    d=b+c;
+    cout<<d;
+    
+    
+    return 0;
+}
+
+23)Romans VS Greeks
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,y,l;
+    cin>>x;
+    cin>>y;
+    cin>>l;
+    int d=x+(l/2);
+    int f=y+(l/2);
+    cout<<d<<" "<<f;
+    return 0;
+}
+
+24)New Member in Team Flash
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,x2,x3,y1,y2,y3,t1,t2;
+    cin>>x1;
+    cin>>y1;
+    cin>>x2;
+    cin>>y2;
+    cin>>x3;
+    cin>>y3;
+    t1=(x1+x2+x3)/3;
+    t2=(y1+y2+y3)/3;
+    cout<<fixed<<setprecision(1)<<t1<<"\n";
+    cout<<fixed<<setprecision(1)<<t2;
+    return 0;
+}
+
+25)The Discount
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float i1,i2,d;
+    cin>>i1;
+    cin>>i2;
+    cin>>d;
+    float tp=i1+i2;
+    float ds=tp-((tp*d)/100);
+    float s=tp-ds;
+    cout<<fixed<<setprecision(2)<<tp<<"\n";
+    cout<<fixed<<setprecision(2)<<ds<<"\n";
+    cout<<fixed<<setprecision(2)<<s;
+    return 0;
+}
+
+26)Treasure Hunt
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,fp,hp,f,h,pp,r,p;
+    cin>>n;
+    cin>>fp;
+    cin>>hp;
+    f=(n*fp)/100;
+    h=((n-f)*hp)/100;
+    r=n-(f+h);
+    p=(r/3);
+    cout<<f<<"\n";
+    cout<<h<<"\n";
+    cout<<p;
+    
+    return 0;
+}
+
+27)Binfon a Tribal
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,y,w,yr,wr,d;
+    cin>>n;
+    y=n/365;
+    yr=n%365;
+    w=yr/7;
+    wr=yr%7;
+    d=wr;
+    cout<<y<<"\n";
+    cout<<w<<"\n";
+    cout<<d;
+    
+    return 0;
+}
+
+28)The Baggings
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int x,y,a,b,c;
+    cin>>x;
+    cin>>y;
+    a=pow((x-3),2);
+    b=pow((y-4),2);
+    c=sqrt(a+b);
+    cout<<c;
+    return 0;
+}
+
+29)Chill Factor
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float t,v,c;
+    cin>>t;
+    cin>>v;
+    c=(35.74+(0.6215*t)+(0.4275*t-35.75)*pow(v,0.16));
+    cout<<fixed<<setprecision(2)<<c;
+    return 0;
+}
